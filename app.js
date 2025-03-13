@@ -49,17 +49,17 @@ const submitForm = () => {
 const bookNowButton = document.querySelector(".button");
 
 bookNowButton.addEventListener("mouseover", () => {
-    bookNowButton.style.backgroundColor = "#ffcc00"; // Change color on hover
+    bookNowButton.style.backgroundColor = "#32CD32";
 });
 
 bookNowButton.addEventListener("mouseout", () => {
-    bookNowButton.style.backgroundColor = ""; // Revert color when mouse leaves
+    bookNowButton.style.backgroundColor = ""; 
 });
 
 bookNowButton.addEventListener("mousedown", () => {
-    bookNowButton.textContent = "Booking..."; // Change text on click
+    bookNowButton.textContent = "Booking..."; 
 });
 
 bookNowButton.addEventListener("mouseup", () => {
-    bookNowButton.textContent = "Book Now!"; // Revert text after releasing click
+    bookNowButton.textContent = "Book Now!";
 });

@@ -13,4 +13,7 @@ const validateFormData = () => {
     if (nameValue === "" || nameValue === null) {
         document.getElementById("nameError").textContent = "Please provide your name."
     }
+    if (emailValue === "" || emailValue === null) {
+        document.getElementById("nameError").textContent = "Please provide your email."
+    }
 }

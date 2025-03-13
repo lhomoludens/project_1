@@ -19,11 +19,13 @@ const validateFormData = () => {
     }
     if (emailValue === "" || emailValue === null) {
         document.getElementById("emailError").textContent = "Please provide your email."
+        document.getElementById("emailError").style.color = "red"
     } else {
         document.getElementById("emailError").textContent = ""
     }
     if (msgValue === "" || msgValue === null) {
         document.getElementById("msgError").textContent = "Please provide a message."
+        document.getElementById("msgError").style.color = "red"
     } else {
         document.getElementById("msgError").textContent = ""
     }

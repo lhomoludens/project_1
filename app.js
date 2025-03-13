@@ -30,6 +30,8 @@ const validateFormData = () => {
 
 
 const submitForm = () => {
-    if ( isFormValid === false) { return }
+    //if ( isFormValid === false) return 
+
+    alert("Your message has been sent")
 
 }

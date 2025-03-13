@@ -23,17 +23,15 @@
         </section>
     </header>
 
-    <nav class="navbar has-shadow is-dark has-text-centered" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-dark has-text-centered" role="navigation" aria-label="main navigation">
         <ul class="navbar-brand">
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#home">Home</a>
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#destinations">Destinations</a>
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#tours">Tours</a>
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#about">About</a>
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#contact">Contact</a>
-            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#video-gallery">Gallery</a>
+            <li role="none"><a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" target="_blank" href="index.html">Home</a></li>
+            <li role="none"><a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" target="_blank" href="about.html">About</a></li>
+            <li role="none"><a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" target="_blank" href="contact.html">Contact</a></li>
+            <li role="none"><a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" target="_blank" href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
-
+   
     <section id="home" class="section">
         <div class="container has-text-centered">
             <h2 class="title is-centered is-size-4">Explore the World with Us</h2>
@@ -150,72 +148,6 @@
                 </div>
             </article>
         </div>
-    </section>
-
-    <section id="video-gallery" class="gallery-section">
-        <article class="box mt-6 has-text-centered">
-            <h5 class="title is-centered is-size-4">Video Gallery</h5>
-            <p class="subtitle is-centered is-size-6">Discover Jordan, Our New Travel Destination.</p>
-            <div class="video-item">
-                <iframe width="1280" height="720" src="https://www.youtube.com/embed/9vN_htf-05w?si=UzxvZU7_4JiqBNGY"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </article>
-    </section>
-
-    <section id="about" class="about-section">
-        <article class="box mt-6 has-text-centered">
-            <h6 class="title is-centered is-size-4">About Us</h6>
-            <p class="subtitle is-centered is-size-6">Founded in 2015, YCS Travel Agency is dedicated to helping
-                travelers explore the world with ease and confidence.
-                Our mission is to provide unforgettable travel experiences by offering personalized packages, expert
-                guidance, and seamless trip planning.
-                Whether you're looking for adventure, relaxation, or cultural exploration, we are committed to making
-                your journey exceptional.</p>
-            <figure class="image is-256x256">
-                <img class="is-rounded"
-                    src="https://images.unsplash.com/photo-1590650589327-3f67c43ad8a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="About Us">
-            </figure>
-        </article>
-    </section>
-
-    <section id="contact" class="contact-section">
-        <article class="container mt-6">
-            <h6 class="title has-text-centered is-size-4">Contact Us</h6>
-            <p class="subtitle has-text-centered is-size-6">Get in touch with us for inquiries and bookings.</p>
-            <form>
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" placeholder="Your Name" id="name">
-                    </div>
-                    <div class="invalid-feedback" id="nameError"></div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" placeholder="Your Email" id="email">
-                        <div class="invalid-feedback" id="emailError"></div>
-                    </div>
-                </div>
-
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Your Message" id="msg"></textarea>
-                        <div class="invalid-feedback" id="msgError"></div>
-                    </div>
-                </div>
-
-                <div class="control has-text-centered">
-                    <button class="button is-primary is-rounded" type="submit" onclick="submitForm()">Submit</button>
-                </div>
-            </form>
-        </article>
     </section>
 
     <footer class="footer mt-6 has-background-primary">

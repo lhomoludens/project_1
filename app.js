@@ -1,5 +1,16 @@
+let nameValue;
+let emailValue;
+let msgValue;
+
+
 const getContactData = () => {
-    let nameValue = document.getElementById("name").value
-    let emailValue = document.getElementById("email").value
-    let msgValue = document.getElementById("msg").value
+    nameValue = document.getElementById("name").value
+    emailValue = document.getElementById("email").value
+    msgValue = document.getElementById("msg").value
+}
+
+const validateFormData = () => {
+    if (nameValue === "" || nameValue === null) {
+        document.getElementById("nameError").textContent = "Please provide your name."
+    }
 }

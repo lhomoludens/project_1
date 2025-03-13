@@ -23,6 +23,8 @@ const validateFormData = () => {
     }
     if (msgValue === "" || msgValue === null) {
         document.getElementById("msgError").textContent = "Please provide a message."
+    } else {
+        document.getElementById("msgError").textContent = ""
     }
 
     if (msgValue === "" || nameValue === "" || emailValue === "") {

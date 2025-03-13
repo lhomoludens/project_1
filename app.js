@@ -31,7 +31,7 @@ const validateFormData = () => {
 
 const submitForm = () => {
     getContactData()
-
+    validateFormData()
     if ( isFormValid === false) return 
     alert("Your message has been sent")
 

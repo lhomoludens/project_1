@@ -18,6 +18,8 @@ const validateFormData = () => {
     }
     if (emailValue === "" || emailValue === null) {
         document.getElementById("emailError").textContent = "Please provide your email."
+    } else {
+        document.getElementById("emailError").textContent = ""
     }
     if (msgValue === "" || msgValue === null) {
         document.getElementById("msgError").textContent = "Please provide a message."

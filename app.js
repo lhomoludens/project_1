@@ -45,3 +45,21 @@ const submitForm = () => {
     alert("Your message has been sent")
 
 }
+
+const bookNowButton = document.querySelector(".button");
+
+bookNowButton.addEventListener("mouseover", () => {
+    bookNowButton.style.backgroundColor = "#ffcc00"; // Change color on hover
+});
+
+bookNowButton.addEventListener("mouseout", () => {
+    bookNowButton.style.backgroundColor = ""; // Revert color when mouse leaves
+});
+
+bookNowButton.addEventListener("mousedown", () => {
+    bookNowButton.textContent = "Booking..."; // Change text on click
+});
+
+bookNowButton.addEventListener("mouseup", () => {
+    bookNowButton.textContent = "Book Now!"; // Revert text after releasing click
+});

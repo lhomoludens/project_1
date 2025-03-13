@@ -13,6 +13,7 @@ const getContactData = () => {
 const validateFormData = () => {
     if (nameValue === "" || nameValue === null) {
         document.getElementById("nameError").textContent = "Please provide your name."
+        document.getElementById("nameError").style.color = "red"
     } else {
         document.getElementById("nameError").textContent = ""
     }

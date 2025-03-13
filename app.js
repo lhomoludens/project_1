@@ -41,7 +41,7 @@ const validateFormData = () => {
 const submitForm = () => {
     getContactData()
     validateFormData()
-    if ( isFormValid === false) return 
+    if (isFormValid === false) return
     alert("Your message has been sent")
 
 }
@@ -53,13 +53,25 @@ bookNowButton.addEventListener("mouseover", () => {
 });
 
 bookNowButton.addEventListener("mouseout", () => {
-    bookNowButton.style.backgroundColor = ""; 
+    bookNowButton.style.backgroundColor = "";
 });
 
 bookNowButton.addEventListener("mousedown", () => {
-    bookNowButton.textContent = "Booking..."; 
+    bookNowButton.textContent = "Booking...";
 });
 
 bookNowButton.addEventListener("mouseup", () => {
     bookNowButton.textContent = "Book Now!";
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // For Navbar toggle
+    const burger = document.querySelector(".navbar-burger");
+    const menu = document.querySelector(".navbar-menu");
+
+    burger.addEventListener("click", function () {
+        burger.classList.toggle("is-active");
+        menu.classList.toggle("is-active");
+    });
 });

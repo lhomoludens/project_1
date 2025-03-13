@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YCS Agency</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
         * {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,21 +18,19 @@
         <section class="hero-body">
             <h1 class="title">Welcome to YCS Travel Agency</h1>
             <p class="subtitle">Explore the world with us and find your perfect getaway.</p>
-            <a href="#contact" class="button">Book Now!</a>
+            <a href="#destinations" class="button">Explore Now</a>
         </section>
     </header>
 
     <nav class="navbar has-shadow is-dark has-text-centered" role="navigation" aria-label="main navigation">
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="#home">Home</a>
-                <a class="navbar-item" href="#destination">Destinations</a>
-                <a class="navbar-item" href="#tours">Tours</a>
-                <a class="navbar-item" href="#about">About</a>
-                <a class="navbar-item" href="#contact">Contact</a>
-                <a class="navbar-item" href="#video-gallery">Gallery</a>
-            </div>
-        </div>
+        <ul class="navbar-brand">
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#home">Home</a>
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#destinations">Destinations</a>
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#tours">Tours</a>
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#about">About</a>
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#contact">Contact</a>
+            <a class="navbar-item ml-6 mr-6 has-text-weight-bold is-hoverable" href="#video-gallery">Gallery</a>
+        </ul>
     </nav>
 
     <section id="home" class="section">
@@ -192,45 +189,36 @@
                 <div class="field">
                     <label class="label">Name</label>
                     <div class="control">
-                        <input class="input" type="text" placeholder="Your Name" id="name">
+                        <input class="input" type="text" placeholder="Your Name">
                     </div>
                     <div class="invalid-feedback" id="nameError"></div>
                 </div>
-
                 <div class="field">
                     <label class="label">Email</label>
                     <div class="control">
-                        <input class="input" type="email" placeholder="Your Email" id="email">
-                        <div class="invalid-feedback" id="emailError"></div>
+                        <input class="input" type="email" placeholder="Your Email">
                     </div>
                 </div>
-
                 <div class="field">
                     <label class="label">Message</label>
                     <div class="control">
-                        <textarea class="textarea" placeholder="Your Message" id="msg"></textarea>
-                        <div class="invalid-feedback" id="msgError"></div>
+                        <textarea class="textarea" placeholder="Your Message"></textarea>
                     </div>
                 </div>
-
                 <div class="control has-text-centered">
-                    <button class="button is-primary is-rounded" type="submit" onclick="submitForm()">Submit</button>
+                    <button class="button is-rounded is-primary" type="submit">Submit</button>
                 </div>
             </form>
-        </article>
     </section>
+
+
+    /* 10.commitin konusu
 
     <footer class="footer mt-6 has-background-primary">
         <div class="content has-text-white has-text-centered">
-            <h2 class="title has-text-white">Follow us!</h2>
-            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <p>&copy; 2025 YCS Travel Agency. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 
 </html>
